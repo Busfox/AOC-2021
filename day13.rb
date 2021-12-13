@@ -84,5 +84,7 @@ end
 
 transparent_origami = TransparentOrigami.new(coordinates: coordinates, folds: folds)
 puts "Part 1: #{ transparent_origami.part1 }"
-puts "You may need to copy part 2 and paste it in your editor of choice to read the message"
-puts "Part 2: #{ transparent_origami.part2 }"
+puts "Part 2:"
+transparent_origami.part2.each do |line|
+  puts line.join
+end
